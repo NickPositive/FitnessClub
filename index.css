@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+p, a {
+    font-family: "Exo 2", sans-serif;
+}
+
+.navbar-holder {
+    background: rgb(33, 37, 41); /* Ensure valid CSS syntax for RGB */
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.navbar-holder .container-fluid {
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;    
+    list-style: none; /* Removes bullets */
+    padding-left: 0;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 10px; /* Adds horizontal padding between items */
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-holder span{
+    color: aliceblue;
+}
