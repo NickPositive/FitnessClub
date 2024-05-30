@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    /* font-family: "Exo 2", sans-serif; */
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: rgb(22, 25, 28);
+}
+
+
+
+/* H1 */
+.hello {
+    /* height: 150px; */
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+
+h1 {
+    /* height: 150px; */
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+  }
+
+  
+
+
+
+/* Header  */
+
+.hero-section h1 {
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 50px;
+    font-style: italic;
+}
+
+.navbar-holder {
+    background: rgb(33, 37, 41); /* Ensure valid CSS syntax for RGB */
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.navbar-holder .container-fluid {
+    max-width: 725px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;    
+    list-style: none; /* Removes bullets */
+    padding-left: 0;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 10px; /* Adds horizontal padding between items */
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-holder span{
+    color: aliceblue;
+}
+
+.navbar-brand i {
+    padding-left: 10px;
+}
+
+
+
+/* Header animation */
+
+header nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+}
+header a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  opacity: .7;
+  transition: opacity .3s cubic-bezier(.51, .92, .24, 1);
+}
+header a::after {
+  --scale: 0;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, rgb(43, 177, 255), rgb(0, 190, 225));
+  transform: scaleX(var(--scale));
+  transform-origin: var(--x) 50%;
+  transition: transform .3s cubic-bezier(.51, .92, .24, 1);
+}
+header a:hover {
+  opacity: 1;
+}
+header a:hover::after {
+  --scale: 1;
+}
+
+
+
+/* Cards */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+:root {
+    --dark-bg: rgb(29, 34, 37);
+    --basic-btn: rgb(61, 111, 218);
+    --basic-btn-hover: rgb(17, 42, 97);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px 50px;
+    margin-left: 350px;
+    padding-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: auto;
+    background-color: var(--dark-bg);
+    border-radius: 20px;
+    padding: 10px;
+    color: #FFF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.6);
+    display: flex; 
+    /* align-items: center; */
+    flex-direction: column;
+    margin: 20px;
+    transition: all .2s ease-in;
+    min-height: 300px
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+/* .card .icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--basic-btn);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 20px 0;
+} */
+
+.card h3 {
+    font-size: 2rem;
+    font-weight: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: rgb(43, 177, 255);
+}
+
+.card h2 {
+    font-size: 2.4rem;
+    margin-left: 30px;
+}
+
+.card ul {
+    list-style: none;
+    min-height: 240px;
+    padding-top: 30px;
+    font-size: 17px;
+}
+.card ul li {
+    padding: 2px 0px;
+    max-width: 250px;
+}
+
+.card ul li .fa-check {
+    color: rgb(12, 99, 31);
+}
+.card ul li .fa-times {
+    color: rgb(99, 12, 12);
+}
+
+.card .btn {
+    padding: 10px 20px;
+    background-color: var(--basic-btn);
+    border-radius: 20px;
+    margin: 20px;
+    text-decoration: none;
+    align-items: end;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color .2s ease-in;
+    max-width: 200px;
+}
+
+.card .btn:hover {
+    background-color: var(--basic-btn-hover);
+}
+.card .standard {
+    background-color: var(--standard-btn)
+}
+.card .btn.standard:hover {
+    background-color: var(--standard-btn-hover);
+}
+.card .premium {
+    background-color: var(--premium-btn)
+}
+.card .btn.premium:hover {
+    background-color: var(--premium-btn-hover);
+}
+
+
+
+
+/* Footer  */
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+  }
+  
+  .footer-icons {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  
+  .footer h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(43, 177, 255);
+    padding-bottom: 3px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    transition: all .3s;
+  }
+  
+  .footer a:hover {
+    color: rgb(43, 177, 255);
+    text-decoration: underline;
+  }
+  
+  .footer a, .footer li {
+    color: white;
+  }
+  
+  .footer ul {
+    margin-top: 0px;
+  }
+  .footer li a {
+    display: block;
+  }
+  footer .footer {
+    background-color: rgb(33, 37, 41);
+  }
