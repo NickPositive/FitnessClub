@@ -246,6 +246,12 @@ header a:hover::after {
     font-size: 10px;
 }
 
+.text-container img {
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+
 
 
 /* Footer  */

@@ -35,18 +35,18 @@
                         <a class="nav-link" href="../trainers">Тренери</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Послуги
                         </a>
                         <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Масаж</a></li>
                         <li><a class="dropdown-item" href="#">Солярій</a></li>
                         <li><a class="dropdown-item" href="#">Фітнес бар</a></li>
-                        <li><a class="dropdown-item" href="/vacancies">Вакансії</a></li>
+                        <li><a class="dropdown-item" href="">Вакансії</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Про нас</a>
+                        <a class="nav-link" href="/about">Про нас</a>
                     </li>
                     </ul>
                 </div>
@@ -58,60 +58,65 @@
 
     <div>
         <div class="hello">
-            <h1>Про нас</h1>
+            <h1>Вакансії</h1>
         </div>
     </div>
-<div class="about-container">
-    <div class="info">
-        <h2><i>Neko Gym</i></h2>
-        <h4>Адреса:</h4>
-        <ul class="list-unstyled">
-            <li>М. Київ</li>
-            <li>Пн-Пт: 9:00 - 21:00</li>
-            <li>Сб: 10:00 - 19:00</li>
-            <li>Нд: 10:00 - 17:00</li>
-        </ul>
 
-        <h4>Телефони:</h4>
-        <ul class="list-unstyled">
-            <li><a href="tel:3801234538519">+38 067-453-85-19</a></li>
-            <li><a href="tel:3801234538519">+38 093-453-86-19</a></li>
-            <li><a href="tel:3801234538519">+38 068-453-87-19</a></li>
-        </ul>
-        
-        <a href="mailto:info@nekogym.com" class="button">Напишіть нам</a>
-        <div class="social-icons">
-            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
-            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube" style="color: white;"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
-        </div>
-    </div>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.169063995803!2d30.44903997799215!3d50.37224670958266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c930c6a44c3b%3A0x64ce61d79c4ec61d!2z0JbQmiDQoNC10YHQv9GD0LHQu9GW0LrQsA!5e0!3m2!1sru!2sua!4v1717057529192!5m2!1sru!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</div>
-
-<div class="descriptoin">
-    <div class="text-container">
-        <img src="/img/logo2.png">
-        <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Neko Gym </b>- мережа сучасних фітнес-клубів, що активно розвивається на ринку спортивної індустрії з 2024 року. Ми створили клуби нового покоління, щоб заняття спортом були максимально комфортними та приносили Вам задоволення.<br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Наші клієнти – дуже різнопланові люди і до кожного з них ми знаходимо індивідуальний підхід, який відповідає найвищим вимогам. У Neko Gym ви почуватиметеся комфортно незалежно від рівня спортивної підготовки.<br>
-            <br>
-            <b>Кваліфікований тренерський склад.</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Команда клубу – досвідчені майстри різного профілю, чий професійний рівень підтверджений великою кількістю нагород та високих спортивних звань. Ми керуємось високими стандартами у підборі команди. Усі тренери Neko Gym проходять спеціальне навчання, беруть участь у тренінгах, семінарах та атестаціях та підтверджують свій професійний рівень.<br>
-            <br>
-            <b>Доступні ціни та широкий вибір клубних карток.</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Демократичні ціни на послуги та абонементи дозволяють нашим клієнтам отримувати саме те, що їм потрібне. Ми робимо якісний фітнес доступним, розвиваємо традиції фітнес-культури та здорового способу життя.<br>
-            <br>
-            <i>Обираючи Neko Gym, ви отримуєте найкраще для себе та свого здоров'я!</i>
-        </p>
-
+    <div class="vacancy-form">
+        <h2>Анкета</h2>
+        <form id="vacancy-form">
+            <div class="form-group">
+                <label for="full-name">ПІБ:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Дата народження:</label>
+                <input type="date" id="birthdate" name="birthdate" min="1900-01-01" max="2024-12-31" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Номер телефону:</label>
+                <input type="tel" id="phone-number" name="phone-number" pattern="[+][3][8][(]0[0-9]{2}[)][0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+38(0__)___-__-__" required>
+            </div>
+            <div class="form-group">
+                <label for="social-media">Соцмережі:</label>
+                <input type="text" id="social-media" name="social-media">
+            </div>
+            <div class="form-group">
+                <label for="education">Освіта:</label>
+                <input type="text" id="education" name="education">
+            </div>
+            <div class="form-group">
+                <label for="experience">Досвід роботи:</label>
+                <textarea id="experience" name="experience" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="achievements">Спортивні досягнення:</label>
+                <textarea id="achievements" name="achievements" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="courses">Пройдені курси:</label>
+                <textarea id="courses" name="courses" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="qualities">Власні якості:</label>
+                <textarea id="qualities" name="qualities" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Надіслати</button>
+            </div>
+        </form>
     </div>
 
-</div>
+    <script>
+        document.getElementById('vacancy-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Зупиняємо стандартну поведінку форми
 
+            const formData = new FormData(event.target);
+            const formObject = Object.fromEntries(formData.entries());
+
+            console.log(formObject); // Виводимо дані в консоль
+        });
+    </script>
 
 </main>
 <footer>
@@ -160,6 +165,7 @@
     </section>
   </footer>
 
+<script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/e2d40d16d3.js" crossorigin="anonymous"></script>
 </body>
