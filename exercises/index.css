@@ -14,22 +14,19 @@ body {
 
 /* H1 */
 .hello {
-  /* height: 150px; */
   color: white;
   text-align: center;
   font-size: 70px;
   font-weight: bold;
   margin-top: 80px;
-}
+  }
+
 h1 {
-  /* height: 150px; */
   color: white;
   text-align: center;
   font-size: 70px;
   font-weight: bold;
-}
-
-  
+  }
 
 
 
@@ -63,14 +60,14 @@ h1 {
 .navbar-nav {
     display: flex;
     flex-direction: row;    
-    list-style: none; /* Removes bullets */
+    list-style: none; 
     padding-left: 0;
     margin-bottom: 0px;
     align-items: center;
 }
 
 .nav-item {
-    padding: 0 10px; /* Adds horizontal padding between items */
+    padding: 0 10px;
 }
 
 .nav-link {
@@ -129,67 +126,52 @@ header a:hover::after {
 
 
 
-.vacancy-form {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 5px;
+/* Halls */
+
+.exercises .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: white;
+  margin-top: 40px;
+}
+
+.block {
+  width: 49%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
   background-color: rgb(29, 34, 37);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
-  border-radius: 20px;
-  margin-bottom: 30px;
-  color: white;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  max-height: 500px;
 }
 
-.vacancy-form h2 {
+.block img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.block-text {
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.block-text h2 {
   text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 
-.form-group {
-  margin-bottom: 15px;
+.block-text p {
+  font-size: 20px;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  
-}
-
-.form-group input, .form-group select {
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
-}
-
-.form-group textarea {
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
-}
-
-.submit-btn {
-  background-color: rgb(61, 111, 218);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.submit-btn:hover {
-  background-color: rgb(39, 72, 144);
-}
-  
 
 
 
@@ -198,6 +180,7 @@ header a:hover::after {
   padding-top: 30px;
   padding-bottom: 30px;
   color: white;
+  margin-top: 50px;
 }
 
 .footer-icons {
