@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Додаємо обробник події для форми
+
     const form = document.querySelector('#modal form');
     form.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -40,11 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Номер телефону:', phone);
         console.log('');
 
-        // Очищаємо поля форми
         document.getElementById('name').value = '';
         document.getElementById('phone').value = '';
 
-        // Закриваємо модальне вікно
         modal.style.display = 'none';
     });
 });
